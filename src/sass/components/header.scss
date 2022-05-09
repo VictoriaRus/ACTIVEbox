@@ -1,0 +1,109 @@
+.header {
+    user-select: none;
+    &__logo a {
+        font-size: 1.5625rem;
+        line-height: 50px;
+        font-weight: 900;
+        color: $grey;
+        user-select: none;
+        &::after {
+            content: " BOX";
+            display: inline;
+            top: 0;
+            left: 0;
+            font-weight: 400;
+            font-size: 1.5625rem;
+        }
+    }
+    &__logo {
+        @media (max-width: 845px) {
+            width: 33.33%;
+        }
+    }
+    &__navigation {
+        display: flex;
+        li {
+            position: relative;
+            text-align: center;
+            width: 134px;
+            @media (max-width: 845px) {
+                width: 100px;
+            }
+            &:hover::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                top: 97px;
+                left: 0;
+                background-color: $grey;
+            }
+            &:active::after {
+                background-color: $dark_red;
+            }
+        }
+        a {
+            display: block;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 100px;
+            text-transform: uppercase;
+            color: $white;
+            &:active {
+                color: $dark_red;
+            }
+        }
+    }
+    .container {
+        border-bottom: 1px solid $grey;
+    }
+    .burger {
+        display: none;
+        i {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 50px;
+            color: $grey;
+        }
+    }
+
+    @media (max-width: 845px) {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        background: url(../img/img.jpg);
+        @include background-no-repeat-center-cover;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $blue-alpha;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .header__nav {
+            display: none;
+        }
+        .burger {
+            display: block;
+            width: 33.33%;
+            text-align: end;
+        }
+        .container {
+            border: none;
+        }
+        .wrapper-open {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .open {
+            @include flex-column-center-center;
+            width: 33.33%;
+            height: 100vh;
+        }
+    }
+}

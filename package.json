@@ -14,5 +14,10 @@
     "@parcel/transformer-sass": "^2.5.0",
     "parcel": "^2.5.0",
     "sass": "^1.51.0"
+  },
+  "alias": {
+    "jquery": {
+      "global": "$"
+    }
   }
 }

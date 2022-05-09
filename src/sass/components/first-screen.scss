@@ -1,0 +1,25 @@
+.first-screen{
+    &__title{
+        text-align: center;
+        margin-bottom: 31px;
+        font-weight: 900;
+        font-size: 4rem;
+        line-height: 4.6875rem;
+        text-transform: uppercase;
+        color: $white;
+    }
+    &__description{
+        text-align: center;
+        margin-bottom: 80px;
+        p{
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.78rem;
+            color: $white;
+        }
+    } 
+    @media (max-width: 845px) {
+        padding-top: 106px;
+    }
+  
+}

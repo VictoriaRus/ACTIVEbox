@@ -1,0 +1,134 @@
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "./components/header.scss";
+@import "./components/first-screen.scss";
+@import "./components/features.scss";
+@import "./components/section-work.scss";
+@import "./components/our-team.scss";
+@import "./components/slider.scss";
+@import "./components/download.scss";
+@import "./components/footer.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    @media (max-width: 1024px) {
+        font-size: 12px;
+    }
+
+    @media (max-width: 320px) {
+        font-size: 9px;
+    }
+}
+
+section {
+    padding: 7.25rem 0;
+}
+
+.container {
+    position: relative;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: auto;
+    z-index: 2;
+    @media (max-width: 1024px) {
+        max-width: 984px;
+    }
+
+    @media (max-width: 320px) {
+        width: 100%;
+    }
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+
+.button {
+    @include flex-row-center-center;
+    user-select: none;
+    width: 369px;
+    height: 80px;
+    background-color: $normal_red;
+    &:hover {
+        background-color: $dark_red;
+    }
+    &:active {
+        background-color: $normal_red;
+        box-shadow: 4px 4px 30px $normal_red;
+    }
+    a {
+        display: block;
+        width: 100%;
+        line-height: 80px;
+        text-align: center;
+        font-weight: 900;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: $white;
+        @media (max-width: 320px) {
+            line-height: 60px;
+        }
+    }
+    @media (max-width: 1024px) {
+        width: 314px;
+    }
+
+    @media (max-width: 320px) {
+        width: 280px;
+        height: 60px;
+    }
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+    background: url(../img/img.jpg);
+    @include background-no-repeat-center-cover;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: $blue-alpha;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        @media (max-width: 376px) {
+            height: 100%;
+        }
+    }
+
+    @media (max-width: 376px) {
+        height: auto;
+    }
+}
+
+.fixed-page {
+    overflow: hidden;
+}
