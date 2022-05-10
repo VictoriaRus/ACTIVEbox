@@ -1,5 +1,11 @@
 main {
     padding: 7.25rem 0;
+    .wrapper-cards {
+        @media (max-width: 600px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 
 .features-card {
@@ -14,7 +20,9 @@ main {
         margin-bottom: 5.5rem;
     }
     &__img {
+        @include flex-row-center-center;
         width: 6.25rem;
+        overflow: hidden;
         margin-bottom: 1.8125rem;
     }
     &__img img {
@@ -42,9 +50,12 @@ main {
         }
     }
     @media (max-width: 600px) {
-        width: 100%;
+        width: 70%;
         &:nth-child(5) {
             margin-bottom: 5.5rem;
         }
+    }
+    @media (max-width: 420px) {
+        width: 100%;
     }
 }

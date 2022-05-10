@@ -26,6 +26,7 @@
             position: relative;
             text-align: center;
             width: 134px;
+            transition: 0.4s;
             @media (max-width: 845px) {
                 width: 100px;
             }
@@ -49,6 +50,7 @@
             line-height: 100px;
             text-transform: uppercase;
             color: $white;
+            transition: 0.4s;
             &:active {
                 color: $dark_red;
             }

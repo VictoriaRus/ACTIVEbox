@@ -1,4 +1,6 @@
 .person-card {
+    display: flex;
+    flex-direction: column;
     width: 262px;
     margin: 0 15px;
     &__img {
@@ -45,6 +47,7 @@
     }
     &__text {
         margin-bottom: 2.375rem;
+        flex-grow: 1;
     }
     &__text p {
         font-weight: 400;
@@ -65,7 +68,13 @@
     }
     &__icons__img img {
         width: 100%;
+        transition: 0.4s;
+        &:hover{
+            transform: translate(0, -5px);
+            transition-delay: 0,5s;
+        }
     }
+   
     @media (max-width: 1168px) {
         width: 20%;
     }

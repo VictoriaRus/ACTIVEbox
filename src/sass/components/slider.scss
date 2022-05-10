@@ -39,7 +39,35 @@
     position: absolute;
     top: 45%;
     z-index: 3;
-    font-size: 10;
+    font-size: 0;
+    background: none;
+    border: none;
+}
+.slick-prev {
+    left: 15px;
+}
+.slick-prev::after {
+    content: "\f104";
+    display: block;
+    top: 0;
+    left: 0;
+    font-family: "Font Awesome 6 free";
+    font-size: 32px;
+    font-weight: 600;
+    color: $white;
+}
+.slick-next {
+    right: 15px;
+}
+.slick-next::after {
+    content: "\f105";
+    display: block;
+    top: 0;
+    left: 0;
+    font-family: "Font Awesome 6 free";
+    font-size: 32px;
+    font-weight: 600;
+    color: $white;
 }
 
 .slider__item {

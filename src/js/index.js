@@ -3,14 +3,14 @@ const jquery = require("jquery")
 window.$ = window.jQuery = jquery;
 
 $('.slider').slick({
-    arrows: false,
+    arrows: true,
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 1000,
     easing: 'ease',
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     draggable: false,
     swipe: true,
     touchThreshold: 10,
@@ -45,5 +45,3 @@ $('.header__navigation-item').click(function () {
     $('.header__navigation').toggleClass('open');
     $('body').toggleClass('fixed-page');
 });
-
-

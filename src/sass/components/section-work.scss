@@ -8,6 +8,7 @@
         width: 25%;
         height: 25vw;
         border: 1px solid $white;
+        transition: all 0.3s ease 0s;
 
         @media (max-width: 600px) {
             width: 50%;
