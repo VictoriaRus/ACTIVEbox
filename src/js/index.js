@@ -1,7 +1,7 @@
-import "./slick";
+/*import "./slick";
 const jquery = require("jquery")
 window.$ = window.jQuery = jquery;
-
+*/
 $('.slider').slick({
     arrows: true,
     dots: true,
