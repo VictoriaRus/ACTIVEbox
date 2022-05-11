@@ -1,5 +1,5 @@
-/*import "./slick";
-const jquery = require("jquery")
+import "./slick";
+/*const jquery = require("jquery")
 window.$ = window.jQuery = jquery;
 */
 $('.slider').slick({
