@@ -1,6 +1,6 @@
 # ACTIVEbox
 
-[open ACTIVEbox](https://victoriarus.github.io/Activebox/src/)
+[open ACTIVEbox](https://victoriarus.github.io/Activebox/)
 
 ### List of technologies
 - JavaScript (slick slider);
